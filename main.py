@@ -38,7 +38,7 @@ def is_pdf_file(filepath):
     except:
         return False
 if __name__ == '__main__':
-    clear_terminal()#
+    clear_terminal()
 
     user_url = input(Fore.GREEN + "Ссылка для установки \n")
     clear_terminal()

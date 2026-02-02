@@ -4,3 +4,5 @@
 
 **Download:**
 `git clone https://github.com/Menobite2137/WebFileCrawler.git`
+
+`pip install requirements.txt`

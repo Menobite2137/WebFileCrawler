@@ -113,6 +113,11 @@ if __name__ == '__main__':
                     txt_folder = os.path.join(download_path, find_word)
                     os.makedirs(txt_folder, exist_ok=True)
                     txt_path = os.path.join(txt_folder, filename.replace('.pdf', '.txt'))
+                    txt_folder_log_path = os.path.join(txt_folder, "txt_folder_log.txt")
+                    
+                    with open(txt_folder_log_path, 'a', encoding='utf-8') as txt_folder_log:
+                        txt_folder_log.write(f"{filename} ID: {index}\n")
+
                     with open(full_path, 'wb') as file:
                         file.write(response.content)
 
